@@ -9,7 +9,7 @@ function test_composer {
 }
 
 function validate_composer {
-    "${php_path}" "${composer_path}" validate --no-check-publish --no-check-lock --working-dir "${working_directory}" > /dev/null 2>&1
+    "${php_path}" "${composer_path}" validate --no-check-publish --no-check-lock --working-dir "${working_directory}"
 }
 
 if ! test_composer; then
